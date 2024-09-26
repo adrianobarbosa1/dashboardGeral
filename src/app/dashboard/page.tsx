@@ -23,6 +23,7 @@ const Dashboard = () => {
               <GridItem key={item.id}>
                 <Link href={item.href} passHref>
                   <Box
+                    maxW="8.125rem"
                     _hover={{
                       bg: "rgba(222, 222, 223, 0.5)",
                       borderRadius: "10px",
