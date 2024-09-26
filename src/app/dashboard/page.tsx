@@ -1,7 +1,6 @@
-import { Box, Center, GridItem, Heading, SimpleGrid } from "@chakra-ui/react";
-import Image from "next/image";
-import Link from "next/link";
-import { menuData } from "./menuData";
+import MenuDashboard from "@/componentes/MenuDashboard";
+import { Box, SimpleGrid } from "@chakra-ui/react";
+import data from "../../data/data.json";
 
 const Dashboard = () => {
   return (
@@ -19,51 +18,8 @@ const Dashboard = () => {
       <Box display="flex" justifyContent="center" alignItems="center" p="1rem">
         <Box width="100%" maxWidth="1200px" p="1rem">
           <SimpleGrid minChildWidth="80px" spacing="20px">
-            {menuData.map((item) => (
-              <GridItem key={item.id}>
-                <Link href={item.href} passHref>
-                  <Box
-                    maxW="8.125rem"
-                    _hover={{
-                      bg: "rgba(222, 222, 223, 0.5)",
-                      borderRadius: "10px",
-                      borderColor: "blue.500",
-                    }}
-                    transition="all 0.3s ease"
-                    cursor="pointer"
-                  >
-                    <Box
-                      display="flex"
-                      justifyContent="center"
-                      alignItems="center"
-                      pt="1rem"
-                    >
-                      <Image
-                        src={item.path}
-                        width="72"
-                        height="72"
-                        quality={100}
-                        priority={true}
-                        alt={item.alt}
-                      />
-                    </Box>
-
-                    <Box>
-                      <Center>
-                        <Heading
-                          as="b"
-                          fontSize="xs"
-                          color="white"
-                          textShadow="1px 1px 1px black"
-                          textAlign="center"
-                        >
-                          {item.label}
-                        </Heading>
-                      </Center>
-                    </Box>
-                  </Box>
-                </Link>
-              </GridItem>
+            {data.dashboard.menu.map((menu) => (
+              <MenuDashboard key={menu.id} menu={menu} />
             ))}
           </SimpleGrid>
         </Box>
