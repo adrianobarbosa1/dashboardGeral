@@ -1,5 +1,5 @@
-import { Button } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function Home() {
-  return <Button>homepage</Button>;
+  return <Link href="/dashboard">ir pa home page</Link>;
 }

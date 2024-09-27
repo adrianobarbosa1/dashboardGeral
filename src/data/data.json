@@ -2,11 +2,35 @@
   "dashboard": {
     "menu": [
       {
-        "id": "5",
+        "id": "7",
         "label": "Cmtt",
         "path": "/icons/cmtt.png",
         "alt": "Controle de usuários",
         "href": "/dashboard/cmtt"
+      },
+      {
+        "id": "6",
+        "label": "Sistema de permissões",
+        "path": "/icons/sip.png",
+        "alt": "Sistema de permissões",
+        "target": "_blank",
+        "href": "https://sei.anapolis.go.gov.br/sip/login.php?sigla_orgao_sistema=PMA&sigla_sistema=SIP"
+      },
+      {
+        "id": "5",
+        "label": "Sistema eletrônico de informações",
+        "path": "/icons/sei.png",
+        "alt": "Programa Sei",
+        "target": "_blank",
+        "href": "https://sei.anapolis.go.gov.br/sip/login.php?sigla_orgao_sistema=PMA&sigla_sistema=SEI"
+      },
+      {
+        "id": "4",
+        "label": "Glpi",
+        "path": "/icons/glpi.png",
+        "alt": "Programa Glpi",
+        "target": "_blank",
+        "href": "https://glpi.anapolis.go.gov.br/glpi/front/central.php#"
       },
       {
         "id": "3",

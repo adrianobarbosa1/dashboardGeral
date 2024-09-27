@@ -7,6 +7,7 @@ type MenuProps = {
   path: string;
   alt: string;
   href: string;
+  target?: string;
 };
 
 type MenuDashboardProps = {
@@ -16,7 +17,7 @@ type MenuDashboardProps = {
 export default function MenuDashboard({ menu }: MenuDashboardProps) {
   return (
     <GridItem>
-      <Link href={menu.href}>
+      <Link href={menu.href} target={menu.target}>
         <Box
           maxW="8.125rem"
           _hover={{
