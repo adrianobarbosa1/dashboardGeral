@@ -1,5 +1,12 @@
-import { ChakraProvider, ChakraProviderProps } from "@chakra-ui/react";
+"use client";
 
-export default function ThemeProviders({ children }: ChakraProviderProps) {
-  return <ChakraProvider>{children}</ChakraProvider>;
+import { CacheProvider } from "@chakra-ui/next-js";
+import { ChakraProvider } from "@chakra-ui/react";
+
+export function ThemeProviders({ children }: { children: React.ReactNode }) {
+  return (
+    <CacheProvider>
+      <ChakraProvider>{children}</ChakraProvider>
+    </CacheProvider>
+  );
 }

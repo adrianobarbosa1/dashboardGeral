@@ -16,7 +16,7 @@ export default function Header() {
       p={5}
     >
       <Stack direction="row" w="full" alignItems="center">
-        <Link href="/dashboard" passHref>
+        <Link href="/dashboard">
           <Logo />
         </Link>
 

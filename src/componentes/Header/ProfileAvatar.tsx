@@ -40,10 +40,10 @@ export default function ProfileAvatar() {
           </MenuButton>
 
           <MenuList>
-            <Link href="/dashboard/profile" passHref>
+            <Link href="/dashboard/profile">
               <MenuItem icon={<FiUser />}>Perfil</MenuItem>
             </Link>
-            <Link href="/dashboard/config" passHref>
+            <Link href="/dashboard/config">
               <MenuItem icon={<FiSettings />}>Configuração</MenuItem>
             </Link>
             <MenuDivider />
